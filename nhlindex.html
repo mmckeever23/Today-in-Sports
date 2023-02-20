@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="60"/>
+  <title>NHL</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="nhlscript.js"></script>
+  <script src="lib/moment/moment.min.js"></script>
+  <link rel="stylesheet" href="./nhlstyle.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+  <nav class="navbar navbar-expand-lg navbar-dark" style="margin-top: -5px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-size: 20px; padding-left: 20px">Today in Sports</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="font-size: 20px;">
+          <a class="nav-link active" href="mlbindex.html" style="padding-left: 40px;">
+            <img src="Images/baseball.png" alt="" width="30" height="30" class="d-inline-block align-text-middle">  MLB</a>
+        <a class="nav-link active" href="nhlindex.html" style="padding-left: 40px;">
+            <img src="Images/puck.png" alt="" width="30" height="30" class="d-inline-block align-text-middle">  NHL</a>
+        </div>
+    </div>
+    <span id="date" style="color: white; font-size: 20px; padding-right: 50px;"></span>
+    <span id="time" style="color: white; font-size: 20px; padding-right: 20px;"></span>
+  </nav>
+  
+</head>
+
+<body>
+  <div class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center" align="center">
+          <div id="active-games"></div>
+          <div class="col">
+            <div class="card" style="width: 25rem;">
+              <img class="card-img-top" src="Images/easternLogo.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 20px; font-weight:500;">Eastern Conference</p>
+              </div>
+              <div id="games-list1"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 25rem;">
+              <img class="card-img-top" src="Images/westernLogo.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Western Conference</p>
+              </div>
+              <div id="games-list2"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 25rem;">
+              <img class="card-img-top-wide" src="Images/icLogo.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 20px; font-weight:500;">Interconference</p>
+              </div>
+              <div id="games-list3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">2023 MLB Advanced Media, L.P. Use of any content on this page acknowledges agreement to the terms posted <a href="http://gdx.mlb.com/components/copyright.txt">here.</a> NHL and the NHL Shield are registered trademarks of the National Hockey League. © NHL 2023. All Rights Reserved. Baseball icon created by Good Ware - Flaticon. Puck icon created by prettycons - Flaticon.</div>
+    </div> 
+
+</body>
+
+</html>
