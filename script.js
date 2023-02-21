@@ -1,6 +1,7 @@
 window.addEventListener("load", function() {
     document.getElementById("date").innerHTML = moment().format('dddd, MMMM Do, Y');
     document.getElementById("time").innerHTML = moment().format('LT');
+    document.getElementById("year").innerHTML = moment().format('YYYY');
     let gamesList1 = document.getElementById('games-list1')
     let gamesList2 = document.getElementById('games-list2')
     let gamesList3 = document.getElementById('games-list3')
