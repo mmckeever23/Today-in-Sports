@@ -1,4 +1,4 @@
-# Today-in-Sports
+# Today in Sports
 
 ## Overview
 - Clean and color-coordinated scoreboard using MLB and NHL APIs. 
