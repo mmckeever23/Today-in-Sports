@@ -13,8 +13,8 @@
   
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand abs" style="font-size: 20px;">Today in Sports</a>
-          <a class="nav-link active" href="index.html" style="font-size: 20px; color: white;">
+      <a class="navbar-brand abs" href="index.html" style="font-size: 20px;">Today in Sports</a>
+          <a class="nav-link active" href="mlbindex.html" style="font-size: 20px; color: white;">
                 <img src="Images/baseball.png" alt="" width="30" height="30">  MLB</a>
             <a class="nav-link active" href="nhlindex.html" style="font-size: 20px;  color: white; padding-left: 20px;">
                 <img src="Images/puck.png" alt="" width="30" height="30" style="font-size: 20px;">  NHL</a>
@@ -30,37 +30,34 @@
   <div class="bg-light">
     <div class="container">
         <div class="row justify-content-center" align="center">
-          <div id="active-games"></div>
+          <h1 style="padding-top: 25px";>Welcome to <span style="color: #0062CC">Today in Sports</span></h1>
+          <h5>Your home for up-to-the-minute sports scores</h5>
+          <h7 style="font-size: 14px;"><i>Scores last updated <span id="seconds"></span> seconds ago</i></h7>
           <div class="col">
             <div class="card" style="width: 25rem;">
+              <a href="mlbindex.html" class="custom-card">
               <img class="card-img-top-wide" src="Images/nlLogo.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text" style="font-size: 20px; font-weight:500;">National League</p>
+                <p class="card-text" style="font-size: 20px; font-weight:500;">MLB</p>
               </div>
-              <div id="games-list1"></div>
-            </div>
+            </a>
+          </div>
           </div>
           <div class="col">
             <div class="card" style="width: 25rem;">
+              <a href="nhlindex.html" class="custom-card">
               <img class="card-img-top-wide" src="Images/alLogo.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">American League</p>
+                <p class="card-text">NHL</p>
               </div>
-              <div id="games-list2"></div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 25rem;">
-              <img class="card-img-top-wide" src="Images/ilLogo.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text" style="font-size: 20px; font-weight:500;">Interleague</p>
-              </div>
-              <div id="games-list3"></div>
+            </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer"><span id="year"></span> MLB Advanced Media, L.P. Use of any content on this page acknowledges agreement to the terms posted <a href="http://gdx.mlb.com/components/copyright.txt">here.</a> NHL and the NHL Shield are registered trademarks of the National Hockey League. © NHL. All Rights Reserved. Baseball icon created by Good Ware - Flaticon. Puck icon created by prettycons - Flaticon.</div>
+      <div class="footer"><span id="year"></span> MLB Advanced Media, L.P. Use of any content on this page acknowledges agreement to the terms posted <a href="http://gdx.mlb.com/components/copyright.txt">here.</a> NHL and the NHL Shield are registered trademarks of the National Hockey League. © NHL. All Rights Reserved. Baseball icon created by Good Ware - Flaticon. Puck icon created by prettycons - Flaticon.<br><br>
+        <b>Designed by Matt McKeever</b>
+        </div>    
     </div> 
 
 </body>
