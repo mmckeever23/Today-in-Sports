@@ -1,7 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-
+  <style>
+    html * {
+      font-family: "Helvetica Neue", Arial, sans-serif,
+    }
+  </style>
   <meta charset="utf-8">
   <meta http-equiv="refresh" content="60"/>
   <title>NHL Scoreboard</title>
@@ -13,14 +17,12 @@
   
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand abs" href="index.html" style="font-size: 20px;">Today in Sports</a>
-          <a class="nav-link active" href="mlbindex.html" style="font-size: 20px; color: white;">
-                <img src="Images/baseball.png" alt="" width="30" height="30">  MLB</a>
-            <a class="nav-link active" href="nhlindex.html" style="font-size: 20px;  color: white; padding-left: 20px;">
-                <img src="Images/puck.png" alt="" width="30" height="30" style="font-size: 20px;">  NHL</a>
+        <a class="navbar-brand abs" href="index.html" style="font-size: 20px; font-weight: 650; padding-right: 20px;">Today in Sports</a>
+        <a class="nav-link active" href="mlbindex.html" style="font-size: 20px; color: white; padding-right: 15px;">MLB</a>
+        <div class="vr" style="height: 40px; width: 1px; color: white; opacity: 100%; margin-right: 15px;"></div>
+            <a class="nav-link active" href="nhlindex.html" style="font-size: 20px; color: white; padding-right: 15px;">NHL</a>
     <div class = "ms-auto" style="color: white; font-size: 20px;">
-      <span id="date" style="padding-right: 20px;"></span>
-      <span id="time"></span>
+      <span id="time" style="font-weight: 650";></span>
     </div>
   </nav>
   
@@ -30,8 +32,8 @@
   <div class="bg-light">
     <div class="container">
         <div class="row justify-content-center" align="center">
-          <h1 style="padding-top: 25px";>Welcome to <span style="color: #0062CC">Today in Sports</span></h1>
-          <h5>Your home for up-to-the-minute sports scores</h5>
+          <h1 style="padding-top: 25px";>Welcome to <span style="color: #007bff">Today in Sports</span></h1>
+          <h6>Up-to-the-minute scores for <span id="date"></span></h6>
           <h7 style="font-size: 14px;"><i>Scores last updated <span id="seconds"></span> seconds ago</i></h7>
           <div id="active-games"></div>
           <div class="col">
@@ -63,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="footer"><span id="year"></span> MLB Advanced Media, L.P. Use of any content on this page acknowledges agreement to the terms posted <a href="http://gdx.mlb.com/components/copyright.txt">here.</a> NHL and the NHL Shield are registered trademarks of the National Hockey League. © NHL. All Rights Reserved. Baseball icon created by Good Ware - Flaticon. Puck icon created by prettycons - Flaticon.<br><br>
+      <div class="footer"><span id="year"></span> MLB Advanced Media, L.P. Use of any content on this page acknowledges agreement to the terms posted <a href="http://gdx.mlb.com/components/copyright.txt">here.</a><br>NHL and the NHL Shield are registered trademarks of the National Hockey League. © 2023 NHL. All Rights Reserved.<br><br>
         <b>Designed by Matt McKeever</b>
         </div>    
       </div> 
