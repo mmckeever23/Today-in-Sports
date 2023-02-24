@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
     var second = 0;
     function pad ( value ) { return value > 9 ? value : value; }
     setInterval( function(){
-        document.getElementById("seconds").innerHTML=pad(++second%60);
+        document.getElementById("seconds").innerHTML=pad(++second%61);
     }, 1000);
     if (second == 0) {
         document.getElementById("seconds").innerHTML=0;
@@ -44,7 +44,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // STARTING SOON
                         } else if (data.games[i].status.detailedState == "Warmup") {
@@ -61,7 +61,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>  
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // DELAYED START
                         } else if (data.games[i].status.detailedState == "Delayed Start") {
@@ -78,7 +78,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>  
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // IN PROGRESS
                         } else if (data.games[i].status.detailedState == "In Progress") {
@@ -95,7 +95,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
                                 </tr>
                             </table>   
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // FINAL
                         } else if ((data.games[i].status.detailedState == "Game Over" || data.games[i].status.detailedState == "Final")) {
@@ -112,7 +112,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
                                 </tr>
                             </table>    
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;                   
                         };
                 // Western Conference
@@ -133,7 +133,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>  
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // STARTING SOON
                         } else if (data.games[i].status.detailedState == "Warmup") {
@@ -150,7 +150,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>     
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // DELAYED START
                         } else if (data.games[i].status.detailedState == "Delayed Start") {
@@ -167,7 +167,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>    
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // IN PROGRESS
                         } else if (data.games[i].status.detailedState == "In Progress") {
@@ -184,7 +184,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
                                 </tr>
                             </table>   
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // FINAL
                         } else if ((data.games[i].status.detailedState == "Game Over" || data.games[i].status.detailedState == "Final")) {
@@ -201,7 +201,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
                                 </tr>
                             </table>  
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;                   
                         };
                 // Interconference
@@ -222,7 +222,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // STARTING SOON
                         } else if (data.games[i].status.detailedState == "Warmup") {
@@ -239,7 +239,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>    
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // DELAYED START
                         } else if (data.games[i].status.detailedState == "Delayed Start") {
@@ -256,7 +256,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore"></td>
                                 </tr>
                             </table>                            
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // IN PROGRESS
                         } else if (data.games[i].status.detailedState == "In Progress") {
@@ -273,7 +273,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
                                 </tr>
                             </table>     
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;
                         // FINAL
                         } else if ((data.games[i].status.detailedState == "Game Over" || data.games[i].status.detailedState == "Final")) {
@@ -290,7 +290,7 @@ window.addEventListener("load", function() {
                                     <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
                                 </tr>
                             </table>
-                            <div style="font-size: 10px">@ ${json.dates[0].games[i].venue.name}</div></div>
+                            <div class="venue">@ ${json.dates[0].games[i].venue.name}</div></div>
                             `;                   
                         };
                     };

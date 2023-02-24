@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
     var second = 0;
     function pad ( value ) { return value > 9 ? value : value; }
     setInterval( function(){
-        document.getElementById("seconds").innerHTML=pad(++second%60);
+        document.getElementById("seconds").innerHTML=pad(++second%61);
     }, 1000);
     if (second == 0) {
         document.getElementById("seconds").innerHTML=0;
