@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
     let gamesList1 = document.getElementById('games-list1')
     let gamesList2 = document.getElementById('games-list2')
     let gamesList3 = document.getElementById('games-list3')
-    fetch("http://statsapi.mlb.com/api/v1/schedule/games/?sportId=1").then(function(response) {
+    fetch("https://statsapi.mlb.com/api/v1/schedule/games/?sportId=1").then(function(response) {
         response.json().then(function(json) {
             let data = json.dates[0];
             for(let i = 0; i<data.games.length; i++) {
