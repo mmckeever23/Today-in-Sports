@@ -94,11 +94,11 @@ window.addEventListener("load", function() {
                             <b>FINAL</b>
                             <table>
                                 <tr style="border: 5px solid rgb(153, 204, 255)">
-                                <td class="tdName" style="border: 4px solid lightgrey"><b>${json.dates[0].games[i].teams.away.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.away.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
+                                <td class="tdName" style="border: 4px solid rgb(153, 204, 255)"><b>${json.dates[0].games[i].teams.away.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.away.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
                                 <td class="tdScore">${json.dates[0].games[i].teams.away.score}</td>
                                 </tr>
                                 <tr style="border: 5px solid rgb(153, 204, 255)">
-                                <td class="tdName" style="border: 4px solid lightgrey"><b>${json.dates[0].games[i].teams.home.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.home.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
+                                <td class="tdName" style="border: 4px solid rgb(153, 204, 255)"><b>${json.dates[0].games[i].teams.home.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.home.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
                                     <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
                                 </tr>
                             </table> 
@@ -181,16 +181,16 @@ window.addEventListener("load", function() {
                             gamesList2.innerHTML += `   
                             <div class="p-blue">
                             <b>FINAL</b>
-                            <table>
-                                <tr style="border: 5px solid rgb(153, 204, 255)">
-                                <td class="tdName" style="border: 4px solid lightgrey"><b>${json.dates[0].games[i].teams.away.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.away.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
-                                <td class="tdScore">${json.dates[0].games[i].teams.away.score}</td>
-                                </tr>
-                                <tr style="border: 5px solid rgb(153, 204, 255)">
-                                <td class="tdName" style="border: 4px solid lightgrey"><b>${json.dates[0].games[i].teams.home.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.home.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
-                                    <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
-                                </tr>
-                            </table>  
+                            <table> 
+                            <tr style="border: 5px solid rgb(153, 204, 255)">
+                            <td class="tdName" style="border: 4px solid rgb(153, 204, 255)"><b>${json.dates[0].games[i].teams.away.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.away.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
+                            <td class="tdScore"><b></b></td>
+                            </tr>
+                            <tr style="border: 5px solid rgb(153, 204, 255)">
+                            <td class="tdName" style="border: 4px solid rgb(153, 204, 255)"><b>${json.dates[0].games[i].teams.home.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.home.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
+                                <td class="tdScore"></td>
+                            </tr>
+                        </table> 
                             <div class="venue">${json.dates[0].games[i].venue.name}</div></div>
                             `;                   
                         };
@@ -272,11 +272,11 @@ window.addEventListener("load", function() {
                             <b>FINAL</b>
                             <table>
                                 <tr style="border: 5px solid rgb(153, 204, 255)">
-                                <td class="tdName" style="border: 4px solid lightgrey"><b>${json.dates[0].games[i].teams.away.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.away.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
+                                <td class="tdName" style="border: 4px solid rgb(153, 204, 255)"><b>${json.dates[0].games[i].teams.away.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.away.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
                                 <td class="tdScore">${json.dates[0].games[i].teams.away.score}</td>
                                 </tr>
                                 <tr style="border: 5px solid rgb(153, 204, 255)">
-                                <td class="tdName" style="border: 4px solid lightgrey"><b>${json.dates[0].games[i].teams.home.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.home.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
+                                <td class="tdName" style="border: 4px solid rgb(153, 204, 255)"><b>${json.dates[0].games[i].teams.home.team.name}</b> <span class="record">(${json.dates[0].games[i].teams.home.leagueRecord.wins}-${json.dates[0].games[i].teams.away.leagueRecord.losses})</span></td>
                                     <td class="tdScore">${json.dates[0].games[i].teams.home.score}</td>
                                 </tr>
                             </table>    
