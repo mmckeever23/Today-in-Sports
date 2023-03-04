@@ -9,20 +9,18 @@
   <meta charset="utf-8">
   <meta http-equiv="refresh" content="60"/>
   <title>NHL Scoreboard</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   <script src="nhlscript.js"></script>
   <script src="lib/moment/moment.min.js"></script>
-  <link rel="stylesheet" href="./scorestyle.css"> 
+  <link rel="stylesheet" href="./style.css"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   
   <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
     <a class="navbar-brand abs me-auto" href="index.html" style="font-size: 20px; font-weight: 400; padding-left: 20px; padding-right: 20px;">Today in Sports</a>
     <a class="btn btn-outline-light btn-sm" style="margin-right: 15px" href="mlbindex.html">MLB</a>
     <a class="btn btn-outline-light btn-sm active" style="margin-right: 15px" href="nhlindex.html">NHL</a>
-    <a class="btn btn-outline-light btn-sm" style="margin-right: 15px";href="">NFL</a>
-    <a class="btn btn-outline-light btn-sm" style="margin-right: 15px";href="">NBA</a>
-    <a class="btn btn-outline-light btn-sm" style="margin-right: 15px";href="">WNBA</a>
-    <a class="btn btn-outline-light btn-sm" style="margin-right: 15px";href="">MLS</a>
+    <a class="btn btn-outline-light btn-sm" style="margin-right: 15px"; href="nbaindex.html">NBA</a>
+    <a class="btn btn-outline-light btn-sm" style="margin-right: 15px"; href="nflindex.html">NFL</a>
   </nav>
   
 </head>
@@ -39,7 +37,7 @@
             <div class="card" style="width: 25rem;">
               <img class="card-img-top" src="Images/easternLogo.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text" style="font-size: 20px; font-weight:500;">Eastern Conference</p>
+                <p class="card-text">Eastern Conference</p>
               </div>
               <div id="games-list1"></div>
             </div>
@@ -57,7 +55,7 @@
             <div class="card" style="width: 25rem;">
               <img class="card-img-top-wide" src="Images/nhlLogo.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text" style="font-size: 20px; font-weight:500;">Interconference</p>
+                <p class="card-text">Interconference</p>
               </div>
               <div id="games-list3"></div>
             </div>
