@@ -63,19 +63,6 @@ a.custom-card:hover {
     border-width: 1px;
 }
 
-.p-red {
-    font-size: 14px;
-    background-color: rgb(255, 153, 153);
-    margin: 0px 15px 15px 15px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 8px;
-    line-height: 20px; 
-    border-color: #d2d2d2;
-    border-style: solid;
-    border-width: 1px;
-}
-
 .p-green {
     font-size: 14px;
     background-color: rgb(153, 255, 153);
